@@ -23,7 +23,7 @@ const Login = props => {
       .then(response => {
         console.log(response);
         localStorage.setItem('token', response.data.payload);
-        props.history.push('/homepage');
+        props.history.push('/bubblepage');
       })
       .catch();
   };
